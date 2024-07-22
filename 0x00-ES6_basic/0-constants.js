@@ -1,16 +1,15 @@
 export function taskFirst() {
-    const task = 'I prefer const when I can.';
-    return task;
+	const task = 'I prefer const when I can.';
+	return task;
 }
-
+  
 export function getLast() {
-    return ' is okay';
+	return ' is okay';
 }
-
+  
 export function taskNext() {
-    const combination = 'But sometimes let';
-    const suffix = getLast();
-    const result = combination + suffix;
-
-    return result;
+	let combination = 'But sometimes let';
+	combination += getLast();
+  
+	return combination;
 }
