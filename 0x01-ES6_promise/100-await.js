@@ -11,4 +11,4 @@ export default async function asyncUploadUser() {
       res = { photo: null, user: null };
     }
     return res;
-  }
+}
