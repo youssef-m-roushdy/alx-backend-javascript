@@ -34,6 +34,29 @@
 * [Rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 * [Javascript ES6 — Iterables and Iterators](https://towardsdatascience.com/javascript-es6-iterables-and-iterators-de18b54f4d4?gi=ee0032735865)
 
+## Learning Objectives
+
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+* What ES6 is
+* New features introduced in ES6
+* The difference between a constant and a variable
+* Block-scoped variables
+* Arrow functions and function parameters default to them
+* Rest and spread function parameters
+* String templating in ES6
+* Object creation and their properties in ES6
+* Iterators and for-of loops
+
+## Requirements
+
+### General
+
+* Your code should use the `js` extension
+* Your code will be tested using the `Jest Testing Framework`
+* Your code will be analyzed using the linter `ESLint` along with specific * rules that we’ll provide
+* All of your functions must be exported
+
 ## Setup
 ### Install NodeJS 12.11.x
 
