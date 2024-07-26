@@ -265,8 +265,8 @@ Import the `class` Currency from `3-currency.js`
 Implement a class named `Pricing`:
 
 * Constructor attributes:
-  * amount (Number)
-  * currency (Currency)
+  * `amount` (Number)
+  * `currency` (Currency)
 
 * Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
 * Implement a getter and setter for each attribute.
