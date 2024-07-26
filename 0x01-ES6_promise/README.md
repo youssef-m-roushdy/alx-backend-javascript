@@ -21,6 +21,13 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * The await operator
 * How to use an `async` function
 
+## Requirements
+
+* Your code should use the `js` extension
+* Your code will be tested using `Jest` and the command npm `run test`
+* Your code will be verified against lint using ESLint
+* All of your functions must be exported
+
 ## Setup
 
 ### Install NodeJS 12.11.x
