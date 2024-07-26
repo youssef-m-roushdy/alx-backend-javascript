@@ -297,7 +297,7 @@ bob@dylan:~$
 Implement a class named `Building`:
 
 * Constructor attributes:
-  * sqft (Number)
+  * `sqft` (Number)
 
 * Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
 * Implement a getter for each attribute.
