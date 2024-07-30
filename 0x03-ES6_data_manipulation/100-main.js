@@ -12,4 +12,4 @@ console.log(weakMap.get(endpoint));
 queryAPI(endpoint);
 queryAPI(endpoint);
 queryAPI(endpoint);
-//queryAPI(endpoint);
+queryAPI(endpoint);
