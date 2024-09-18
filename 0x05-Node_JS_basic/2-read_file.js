@@ -14,7 +14,8 @@ const countStudents = (path) => {
     }
 
     // Extract the header (first row) which contains field names
-    const header = lines[0].split(',');
+    const [header] = lines;
+    const headers = header.split(',');
 
     // Check that there are students in the CSV
     if (lines.length <= 1) {
@@ -27,28 +28,28 @@ const countStudents = (path) => {
     const fields = {};
 
     // Parse each line starting from the second one (first one is the header)
-    for (let i = 1; i < lines.length; i++) {
+    for (let i = 1; i < lines.length; i += 1) {
       const values = lines[i].split(',');
 
       // Ignore incomplete lines (like empty values or lines missing columns)
-      if (values.length === header.length) {
+      if (values.length === headers.length) {
         const student = {};
 
         // Map student data based on headers (e.g., 'firstname', 'field')
-        for (let j = 0; j < values.length; j++) {
-          student[header[j]] = values[j];
+        for (let j = 0; j < values.length; j += 1) {
+          student[headers[j]] = values[j];
         }
 
         // Add student to the list
         students.push(student);
 
         // Group students by field
-        const field = student.field;
+        const { field, firstname } = student;
         if (field) {
           if (!fields[field]) {
             fields[field] = [];
           }
-          fields[field].push(student.firstname);
+          fields[field].push(firstname);
         }
       }
     }
