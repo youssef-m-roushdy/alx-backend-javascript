@@ -6,7 +6,7 @@ const countStudents = (path) => {
     const data = fs.readFileSync(path, 'utf8');
 
     // Split the data into lines and filter out any empty lines
-    const lines = data.trim().split('\n').filter(line => line.length > 0);
+    const lines = data.trim().split('\n').filter((line) => line.length > 0);
 
     if (lines.length === 0) {
       console.log('No students found in the file');
@@ -60,7 +60,6 @@ const countStudents = (path) => {
     Object.entries(fields).forEach(([field, names]) => {
       console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
     });
-
   } catch (err) {
     // Handle file read errors
     throw new Error('Cannot load the database');
