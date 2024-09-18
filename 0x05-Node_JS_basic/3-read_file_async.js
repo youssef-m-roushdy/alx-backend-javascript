@@ -1,8 +1,8 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 
 const countStudents = async (path) => {
   try {
-    // Read the file synchronously
+    // Read the file asynchronously
     const data = await fs.readFile(path, 'utf8');
 
     // Split the data into lines and filter out any empty lines
