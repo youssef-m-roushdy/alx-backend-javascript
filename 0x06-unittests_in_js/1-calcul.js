@@ -7,7 +7,7 @@ const calculateNumber = (type, a, b) => {
   }
   if(type === 'DIVIDE') {
     if (Math.round(b) === 0)
-      return 'Error can not divide by zero';
+      return 'Error';
     return Math.round(a) / Math.round(b);
   }
 }
