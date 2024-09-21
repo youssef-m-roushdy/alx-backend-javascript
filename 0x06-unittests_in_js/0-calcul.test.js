@@ -6,24 +6,24 @@ describe('calculateNumber', () => {
     assert.strictEqual(calculateNumber(1, 3), 4);
   });
 
-  it('should return 5 when inputs are 1.4 and 4.5 (both should be rounded)', () => {
+  it('should return 6 when inputs are 1.4 and 4.5 (both should be rounded)', () => {
     assert.strictEqual(calculateNumber(1.4, 4.5), 6);
   });
 
-  it('should return 6 when inputs are 1.5 and 4.5 (both rounded up)', () => {
-    assert.strictEqual(calculateNumber(1.5, 4.5), 6);
+  it('should return 7 when inputs are 1.5 and 4.5 (both rounded up)', () => {
+    assert.strictEqual(calculateNumber(1.5, 4.5), 7);
   });
 
   it('should return 0 when inputs are 0 and 0', () => {
     assert.strictEqual(calculateNumber(0, 0), 0);
   });
 
-  it('should return -3 when inputs are -1.4 and -1.4', () => {
-    assert.strictEqual(calculateNumber(-1.4, -1.4), -3);
+  it('should return -2 when inputs are -1.4 and -1.4', () => {
+    assert.strictEqual(calculateNumber(-1.4, -1.4), -2);
   });
 
-  it('should return -3 when inputs are -1.5 and -1.5 (both rounded down)', () => {
-    assert.strictEqual(calculateNumber(-1.5, -1.5), -3);
+  it('should return -2 when inputs are -1.5 and -1.5 (both rounded down)', () => {
+    assert.strictEqual(calculateNumber(-1.5, -1.5), -2);
   });
 
   it('should return 0 when inputs are 0.4 and -0.4', () => {
