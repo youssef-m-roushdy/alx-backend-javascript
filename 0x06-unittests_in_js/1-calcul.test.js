@@ -3,16 +3,16 @@ const calculateNumber = require('./1-calcul');
 
 describe('calculateNumber', () => {
     it('Sum a and b',() =>{
-        assert(calculateNumber('SUM', 5.0, 2.7));
+        assert.strictEqual(calculateNumber('SUM', 5.0, 2.7), 8);
     });
     it('Subtract a and b',() =>{
-        assert(calculateNumber('SUBTRACT', 7.654564, 3.23541));
+        assert.strictEqual(calculateNumber('SUBTRACT', 7.654564, 3.23541), 5);
     });
     it('Divide a and b',() =>{
-        assert(calculateNumber('DIVIDE', 7.6, 1.6));
+        assert.strictEqual(calculateNumber('DIVIDE', 7.6, 1.7), 4);
     });
     it('Divide with b at 0',() =>{
-        assert(calculateNumber('DIVIDE',5 ,0.5));
+        assert.strictEqual(calculateNumber('DIVIDE', 10, 0.4), 'Error can not divide by zero');
     });
     
 })
