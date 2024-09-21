@@ -2,4 +2,4 @@ const calculateNumber = (a, b) => {
   return Math.round(a + b);
 }
 
-module.exports = calculateNumber
+module.exports = calculateNumber;
