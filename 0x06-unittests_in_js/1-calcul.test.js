@@ -25,5 +25,8 @@ describe('calculateNumber', () => {
   });
   it('Divide with b at 0',() =>{
     assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0), 'Error can not divide by zero');
-  }); 
+  });
+  it('Divide with a at 0',() =>{
+    assert.strictEqual(calculateNumber('DIVIDE', 0, 9), 0);
+  });
 });
